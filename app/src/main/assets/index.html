@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopCoder Scanner</title>
+</head>
+<script>
+    function openScanner() {
+    
+    Android.scanBarcode();
+    
+      
+    }
+
+    function gotCode(val){
+        document.getElementById("banner").innerHTML=val;
+    } 
+    </script>
+<body>
+    <table cellspacing = "40" ,align = "center">
+        <tr>
+            <td></td>
+            <td><H2>Barcode Scanner</H2></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><H4 id ="banner">click below to open scanner</H4></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="openScanner()">Open Scanner</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    
+    
+    
+</body>
+</html>
